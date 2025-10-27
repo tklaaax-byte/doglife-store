@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DogLife Store 🐾</title>
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Seguridad básica -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.paypal.com;">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload">
 </head>
+
 <body>
   <header>
     <h1>🐶 DogLife Store</h1>
@@ -14,8 +18,24 @@
   </header>
 
   <main>
+    <!-- 🔍 Buscador -->
+    <section id="buscador">
+      <input type="text" id="searchInput" placeholder="🔍 Buscar producto...">
+    </section>
+
+    <!-- 🛒 Productos -->
     <section class="productos" id="lista-productos">
       <!-- Aquí se insertarán los productos dinámicamente -->
+    </section>
+
+    <!-- 🐾 Galería -->
+    <section id="galeria">
+      <h2>🐾 Galería de nuestros peludos</h2>
+      <div id="imagenes-galeria">
+        <img src="assets/img/collar.jpg" alt="Collar">
+        <img src="assets/img/juguete.jpg" alt="Juguete">
+        <img src="assets/img/ropa.jpg" alt="Ropa">
+      </div>
     </section>
   </main>
 
@@ -23,8 +43,10 @@
     <p>© 2025 DogLife Store | Hecho con ❤️ desde GitHub Pages</p>
   </footer>
 
+  <!-- PayPal SDK -->
   <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+
+  <!-- Script principal -->
   <script src="script.js"></script>
 </body>
 </html>
-
