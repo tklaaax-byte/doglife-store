@@ -1,0 +1,23 @@
+[
+  {
+    "nombre": "Collar ajustable",
+    "precio": "8.990 CLP",
+    "imagen": "assets/img/collar.jpg",
+    "descripcion": "Collar cómodo y resistente, ideal para paseos largos.",
+    "precioUSD": "8.99"
+  },
+  {
+    "nombre": "Juguete interactivo",
+    "precio": "6.490 CLP",
+    "imagen": "assets/img/juguete.jpg",
+    "descripcion": "Juguete de goma que ayuda a la salud dental.",
+    "precioUSD": "6.49"
+  },
+  {
+    "nombre": "Ropa para perro",
+    "precio": "12.990 CLP",
+    "imagen": "assets/img/ropa.jpg",
+    "descripcion": "Abrigo suave y transpirable para climas fríos.",
+    "precioUSD": "12.99"
+  }
+]
