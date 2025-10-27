@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DogLife Store 🐾</title>
   <link rel="stylesheet" href="style.css">
-  
-  <!-- Seguridad básica -->
+
+  <!-- Seguridad -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.paypal.com;">
   <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload">
 </head>
@@ -21,12 +21,11 @@
     <!-- 🔍 Buscador -->
     <section id="buscador">
       <input type="text" id="searchInput" placeholder="🔍 Buscar producto...">
+      <button id="verCarrito">🛒 Ver carrito (<span id="contadorCarrito">0</span>)</button>
     </section>
 
-    <!-- 🛒 Productos -->
-    <section class="productos" id="lista-productos">
-      <!-- Aquí se insertarán los productos dinámicamente -->
-    </section>
+    <!-- 🛍 Productos -->
+    <section class="productos" id="lista-productos"></section>
 
     <!-- 🐾 Galería -->
     <section id="galeria">
@@ -37,6 +36,16 @@
         <img src="assets/img/ropa.jpg" alt="Ropa">
       </div>
     </section>
+
+    <!-- 🧺 Modal del carrito -->
+    <div id="carritoModal" class="modal">
+      <div class="modal-contenido">
+        <h2>🛒 Tu carrito</h2>
+        <div id="listaCarrito"></div>
+        <p id="total"></p>
+        <button id="cerrarCarrito">Cerrar</button>
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -45,8 +54,6 @@
 
   <!-- PayPal SDK -->
   <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
-
-  <!-- Script principal -->
   <script src="script.js"></script>
 </body>
 </html>
